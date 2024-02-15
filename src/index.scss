@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "KrutiDev010";
+  src: url("/fonts/KrutiDev010/KrutiDev010.eot");
+  src: local("KrutiDev010"),
+    url("/fonts/KrutiDev010/KrutiDev010.woff") format("woff"),
+    url("/fonts/KrutiDev010/KrutiDev010.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Devanagari";
+  src: url("/fonts/Devanagari/Devanagari.eot");
+  src: local("Devanagari"),
+    url("/fonts/Devanagari/Devanagari.woff") format("woff"),
+    url("/fonts/Devanagari/Devanagari.ttf") format("truetype");
+}
+
+// 3rd-party Plugins
+@import "~highlight.js/styles/googlecode.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+// Theme Styles
+@import "./_metronic/_assets/sass/style.react.scss";
+
+// Default Layout themes
+// @import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// @import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+
+// Header themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/base/dark.scss";
+
+// Header Menu themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/dark.scss";
+
+// Brand themes
+// .brand-dark {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// }
+// // Light
+// .brand-light {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/light.scss";
+// }
+
+// Aside themes
+// Dark
+//@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+// Light
+// @import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+// .example-highlight {
+//   padding: 0rem 1.5rem 1.75rem !important;
+// }
+
+.example-highlight > pre {
+  background: none transparent !important;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+  code {
+    overflow-y: auto;
+    display: block;
+
+    span {
+      background: none transparent !important;
+    }
+  }
+}
+
+.json > pre {
+  background: none #fff !important;
+}
+
+.example-code > .json {
+  background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+  width: 100%;
+  max-width: 45px;
+  height: 45px;
+}
+
+.react-bootstrap-table {
+  overflow-x: auto;
+}
+
+.react-bootstrap-table {
+  th {
+    outline: none;
+
+    &.sortable {
+      .svg-icon-sort {
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .svg-icon-sort {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .table.table-head-custom thead tr {
+    .sortable-active {
+      color: #1bc5bd !important;
+    }
+  }
+}
+.main-wrapper {
+  display: flex;
+}
+.cursor-default {
+  cursor: default !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="sans-serif"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="sans-serif"]::before {
+  font-family: "sans-serif", cursive;
+  content: "Sans Serif" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="KrutiDev010"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="KrutiDev010"]::before {
+  font-family: "KrutiDev010", cursive;
+  content: "कृतिदेव" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Devanagari"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Devanagari"]::before {
+  font-family: "Devanagari";
+  content: "देवनागरी" !important;
+}
+
+/* Set content font-families */
+.ql-font-sans-serif {
+  font-family: "sans-serif";
+}
+
+.ql-font-KrutiDev010 {
+  font-family: "KrutiDev010";
+}
+
+.ql-font-Devanagari {
+  font-family: "Devanagari";
+}
+
+.uploader {
+  width: 100%;
+
+  input[type="file"] {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    position: inherit !important;
+    opacity: 1 !important;
+  }
+
+  .progress {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .uploaded-files {
+    float: left;
+    width: 100%;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+
+    .uploaded-file {
+      float: left;
+      margin: 10px;
+      width: 100px;
+
+      .file {
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      z-index: 100;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .input-group-append {
+      margin-left: 0 !important;
+      width: 100%;
+    }
+  }
+}
